@@ -14,12 +14,20 @@ class TripFunctions{
         
     }
     
-    static func readTrips(){
-        if Data.tripModels.count == 0{
-            Data.tripModels.append(TripModel(title: "Trip To Bali"))
-            Data.tripModels.append(TripModel(title: "Trip To Mehico"))
-            Data.tripModels.append(TripModel(title: "Trip To Russia"))
+    static func readTrips(completion: @escaping () -> ()){
+        DispatchQueue.global(qos: .userInteractive).async {
+             if Data.tripModels.count == 0{
+                 Data.tripModels.append(TripModel(title: "Trip To Bali"))
+                 Data.tripModels.append(TripModel(title: "Trip To Mehico"))
+                 Data.tripModels.append(TripModel(title: "Trip To Russia"))
+             }
+            DispatchQueue.main.async {
+                       completion()
+                   }
         }
+       
+        
+        
     }
     
     static func updateTrip(tripModel: TripModel){

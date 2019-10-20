@@ -1,7 +1,7 @@
 
 import UIKit
 
-class TripsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TripsViewController: UIViewController{
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -17,7 +17,9 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
             self?.tableView.reloadData()
         }
     }
-    
+}
+
+extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Data.tripModels.count
     }

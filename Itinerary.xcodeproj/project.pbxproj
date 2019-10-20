@@ -17,6 +17,7 @@
 		E57ED351235C586E005D8002 /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57ED34F235C5432005D8002 /* TripsViewController.storyboard */; };
 		E57ED352235C5878005D8002 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57ED34D235C5415005D8002 /* TripsViewController.swift */; };
 		E57ED356235C6383005D8002 /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57ED354235C624A005D8002 /* TripsTableViewCell.swift */; };
+		E57ED35A235C891D005D8002 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57ED359235C891D005D8002 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E57ED34D235C5415005D8002 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		E57ED34F235C5432005D8002 /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
 		E57ED354235C624A005D8002 /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		E57ED359235C891D005D8002 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		E52ADAE0234CFFE400EC46AE /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
+				E57ED357235C88EB005D8002 /* Extensions */,
 				E57ED34B235C53F4005D8002 /* Views */,
 				E57ED343235C4B5F005D8002 /* Model */,
 				E52ADAE1234CFFE400EC46AE /* AppDelegate.swift */,
@@ -109,6 +112,14 @@
 				E57ED354235C624A005D8002 /* TripsTableViewCell.swift */,
 			);
 			path = TripViewController;
+			sourceTree = "<group>";
+		};
+		E57ED357235C88EB005D8002 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E57ED359235C891D005D8002 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			files = (
 				E52ADAE2234CFFE400EC46AE /* AppDelegate.swift in Sources */,
 				E57ED34A235C4D40005D8002 /* Data.swift in Sources */,
+				E57ED35A235C891D005D8002 /* UIViewExtensions.swift in Sources */,
 				E52ADAE4234CFFE400EC46AE /* SceneDelegate.swift in Sources */,
 				E57ED352235C5878005D8002 /* TripsViewController.swift in Sources */,
 				E57ED348235C4BA3005D8002 /* TripFunctions.swift in Sources */,

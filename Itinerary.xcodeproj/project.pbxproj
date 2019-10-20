@@ -11,6 +11,8 @@
 		E52ADAE4234CFFE400EC46AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52ADAE3234CFFE400EC46AE /* SceneDelegate.swift */; };
 		E52ADAEB234CFFE600EC46AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52ADAEA234CFFE600EC46AE /* Assets.xcassets */; };
 		E52ADAEE234CFFE600EC46AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52ADAEC234CFFE600EC46AE /* LaunchScreen.storyboard */; };
+		E57ED346235C4B90005D8002 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57ED345235C4B90005D8002 /* TripModel.swift */; };
+		E57ED348235C4BA3005D8002 /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57ED347235C4BA3005D8002 /* TripFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E52ADAEA234CFFE600EC46AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E52ADAED234CFFE600EC46AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52ADAEF234CFFE600EC46AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57ED345235C4B90005D8002 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
+		E57ED347235C4BA3005D8002 /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		E52ADAE0234CFFE400EC46AE /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
+				E57ED343235C4B5F005D8002 /* Model */,
 				E52ADAE1234CFFE400EC46AE /* AppDelegate.swift */,
 				E52ADAE3234CFFE400EC46AE /* SceneDelegate.swift */,
 				E52ADAEA234CFFE600EC46AE /* Assets.xcassets */,
@@ -59,6 +64,23 @@
 				E52ADAEF234CFFE600EC46AE /* Info.plist */,
 			);
 			path = Itinerary;
+			sourceTree = "<group>";
+		};
+		E57ED343235C4B5F005D8002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E57ED344235C4B70005D8002 /* Trip */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E57ED344235C4B70005D8002 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				E57ED345235C4B90005D8002 /* TripModel.swift */,
+				E57ED347235C4BA3005D8002 /* TripFunctions.swift */,
+			);
+			path = Trip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +155,8 @@
 			files = (
 				E52ADAE2234CFFE400EC46AE /* AppDelegate.swift in Sources */,
 				E52ADAE4234CFFE400EC46AE /* SceneDelegate.swift in Sources */,
+				E57ED348235C4BA3005D8002 /* TripFunctions.swift in Sources */,
+				E57ED346235C4B90005D8002 /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
